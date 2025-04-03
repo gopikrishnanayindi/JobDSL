@@ -8,6 +8,7 @@ pipelineJob('Pipeline-Job') {
                     agent any
                     
                     stages {
+
                         stage('Builds') {
                             steps {
                                 echo 'Building...'
