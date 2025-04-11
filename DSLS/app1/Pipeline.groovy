@@ -1,4 +1,4 @@
-pipelineJob('Pipeline-Job') {
+pipelineJob('Pipeline-Job11') {
     description('This is a Pipeline Job')
     
     definition {
@@ -9,19 +9,19 @@ pipelineJob('Pipeline-Job') {
                     
                     stages {
 
-                        stage('Builds') {
+                        stage('App Builds') {
                             steps {
-                                echo 'Building...'
+                                echo 'App Building...'
                             }
                         }
                         
-                        stage('Test') {
+                        stage('App Test') {
                             steps {
                                 echo 'Testing...'
                             }
                         }
                         
-                        stage('Deploy') {
+                        stage('App Deploy') {
                             steps {
                                 echo 'Deploying...'
                             }
