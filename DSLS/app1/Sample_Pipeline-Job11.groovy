@@ -1,9 +1,4 @@
-pipelineJob('Sample-Pipeline-Job11') {
-    description('This is a Pipeline Job')
-    
-    definition {
-        cps {
-            script("""
+
                 pipeline {
                     agent any
                     
@@ -28,7 +23,3 @@ pipelineJob('Sample-Pipeline-Job11') {
                         }
                     }
                 }
-            """)
-        }
-    }
-}
